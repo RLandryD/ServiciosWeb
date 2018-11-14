@@ -1,5 +1,3 @@
-<%@page import="jaxws.SWConvertTemps_Service"%>
-<%@page import="jaxws.SWConvertTemps"%>
 <%@page contentType = "text/html" pageEncoding = "UTF-8" %>
 <! DOCTYPE html>
 <html>
@@ -15,11 +13,12 @@
         
         <%
             String sctGrados = request.getParameter("ctGrados");
+            jaxws.SWConverTemps_Service service;
+            jaxws.SWConverTemps port = new jaxws.SWConverTemps();
             if (sctGrados != null && !sctGrados.isEmpty())
             {
                 double nGrados = 0.0;
-                jaxws.SWConvertTemps_Service service;
-                jaxws.SWConvertTemps port;
+                
                 
                 try{
                     //Crear un objeto de la clase que implementa el servicio
@@ -31,11 +30,11 @@
                     String convertir = request.getParameter("bgGrados");
                     if (convertir.compareTo("aFahr") == 0)
                     {
-                        nGrados = port.convCentAFahr(nGrados);
+                        nGrados = port.ConvCentAFahr(nGrados);
                     }
                     if (convertir.compareTo("aCent") == 0)
                     {
-                        nGrados = port.convFahrACent(nGrados);
+                        nGrados = port.ConvFahrACent(nGrados);
                     }
                     //Mostrar el resultado en la caja de texto
                     Double objGrados = nGrados;
