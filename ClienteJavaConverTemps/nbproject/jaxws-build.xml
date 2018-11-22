@@ -18,8 +18,8 @@
     </target>
     <target name="wsimport-client-SWConverTemps" depends="wsimport-init">
         <mkdir dir="${build.generated.dir}/jax-wsCache/SWConverTemps"/>
-        <property name="wsdl-SWConverTemps" location="xml-resources/web-service-references/SWConverTemps/wsdl/localhost_30934/WebService/SWConverTemps.wsdl"/>
-        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/SWConverTemps" destdir="${build.generated.dir}/jax-wsCache/SWConverTemps" wsdl="${wsdl-SWConverTemps}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:30934/WebService/SWConverTemps?wsdl" xnocompile="true" xendorsed="true">
+        <property name="wsdl-SWConverTemps" location="C:\Users\win 10\Documents\GitHub\ServiciosWeb\ClienteJavaConverTemps\xml-resources\web-service-references\SWConverTemps\wsdl\localhost_30934\WebService\SWConverTemps.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/SWConverTemps" destdir="${build.generated.dir}/jax-wsCache/SWConverTemps" wsdl="${wsdl-SWConverTemps}" catalog="jax-ws-catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/WebService/SWConverTemps?wsdl" xnocompile="true" xendorsed="true">
             <depends file="${wsdl-SWConverTemps}"/>
             <produces dir="${build.generated.dir}/jax-wsCache/SWConverTemps"/>
         </wsimport>

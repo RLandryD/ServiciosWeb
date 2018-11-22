@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/C:/Users/win%2010/Documents/GitHub/ServiciosWeb/SinRad/src/META-INF/wsdl/localhost_30934/WebService/SWConverTemps.wsdl" uri="xml-resources/web-service-references/SWConverTemps/wsdl/SWConverTemps.wsdl"/>
+</catalog>

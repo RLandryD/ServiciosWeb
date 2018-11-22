@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/C:/Users/win%2010/Documents/GitHub/ServiciosWeb/Servicios/web/wsdl/localhost_8080/WebApplication2/temperatures.wsdl" uri="src/conf/xml-resources/web-services/temperature/wsdl/temperatures.wsdl"/>
+    <system systemId="file:/C:/Users/win%2010/Documents/GitHub/ServiciosWeb/Servicios/web/wsdl/localhost_8080/Servicios/temperatures.wsdl" uri="src/conf/xml-resources/web-services/temperaturePort/wsdl/temperatures.wsdl"/>
+    <system systemId="http://localhost:8080/Servicios/temperatures?xsd=1" uri="src/conf/xml-resources/web-services/temperaturePort/wsdl/localhost_8080/Servicios/temperatures.xsd_1.xsd"/>
+</catalog>
